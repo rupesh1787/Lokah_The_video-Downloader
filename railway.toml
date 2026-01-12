@@ -1,11 +1,12 @@
 [build]
 builder = "NIXPACKS"
+watchPatterns = ["backend/**"]
 
 [build.nixpacks]
 providers = ["node"]
 
 [deploy]
-startCommand = "npm start"
+startCommand = "cd backend && npm start"
 healthcheckPath = "/health"
 healthcheckInterval = 30
 restartPolicyType = "ON_FAILURE"
