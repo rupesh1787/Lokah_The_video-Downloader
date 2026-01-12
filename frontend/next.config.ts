@@ -18,13 +18,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Ensure proper production build
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  typescript: {
-    ignoreBuildErrors: false,
-  },
 };
 
 export default nextConfig;
