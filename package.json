@@ -1,0 +1,13 @@
+{
+  "name": "lokah-video-downloader",
+  "version": "1.0.0",
+  "description": "Lokah — The Video Downloader",
+  "scripts": {
+    "postinstall": "cd backend && npm install",
+    "start": "cd backend && npm start",
+    "build": "echo 'No build step required'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

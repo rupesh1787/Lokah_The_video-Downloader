@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["ffmpeg", "python311"]
+
+[phases.install]
+cmds = [
+    "npm install",
+    "curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp || curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ./yt-dlp",
+    "chmod +x ./yt-dlp || true"
+]
+
+[start]
+cmd = "node index.js"
+
+[variables]
+NODE_ENV = "production"
