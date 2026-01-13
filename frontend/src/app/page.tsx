@@ -230,29 +230,27 @@ export default function Home() {
               </p>
               <div className="space-y-3">
                 <a 
-                  href="mailto:support@lokah.app?subject=Lokah Support Request"
-                  className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
+                  href="mailto:lokahhelpdesk@gmail.com?subject=Lokah Support Request"
+                  className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-200 hover:scale-[1.02]"
                 >
                   <div className="h-10 w-10 rounded-lg bg-blue-500/20 flex items-center justify-center">
                     <span className="text-lg">📧</span>
                   </div>
                   <div>
                     <p className="font-medium text-white">Email Support</p>
-                    <p className="text-xs text-zinc-500">support@lokah.app</p>
+                    <p className="text-xs text-zinc-500">lokahhelpdesk@gmail.com</p>
                   </div>
                 </a>
                 <a 
-                  href="https://github.com/rupesh1787/Lokah_The_video-Downloader/issues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
+                  href="tel:+918698603184"
+                  className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-200 hover:scale-[1.02]"
                 >
-                  <div className="h-10 w-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
-                    <span className="text-lg">🐛</span>
+                  <div className="h-10 w-10 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                    <span className="text-lg">📞</span>
                   </div>
                   <div>
-                    <p className="font-medium text-white">Report a Bug</p>
-                    <p className="text-xs text-zinc-500">GitHub Issues</p>
+                    <p className="font-medium text-white">Phone Support</p>
+                    <p className="text-xs text-zinc-500">+91 8698603184</p>
                   </div>
                 </a>
               </div>
@@ -459,7 +457,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-1.5 sm:gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-zinc-400"
+                className="flex items-center gap-1.5 sm:gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-zinc-400 hover:border-white/20 hover:bg-white/10 hover:text-zinc-300 transition-all duration-200 cursor-default"
               >
                 <feature.icon className="h-3 w-3 sm:h-4 sm:w-4" />
                 <span>{feature.label}</span>
@@ -486,10 +484,10 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 + index * 0.1 }}
-                  className="flex flex-col items-center text-center"
+                  className="flex flex-col items-center text-center group cursor-default"
                 >
-                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-xl sm:rounded-2xl border border-white/10 bg-white/5 mb-3 sm:mb-4">
-                    <item.icon className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
+                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-xl sm:rounded-2xl border border-white/10 bg-white/5 mb-3 sm:mb-4 group-hover:border-white/20 group-hover:bg-white/10 transition-all duration-300">
+                    <item.icon className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="font-medium text-white text-sm sm:text-base mb-1 sm:mb-2">{item.step}</h3>
                   <p className="text-xs sm:text-sm text-zinc-500">{item.description}</p>
@@ -517,14 +515,6 @@ export default function Home() {
               >
                 Support
               </button>
-              <a 
-                href="https://github.com/rupesh1787/Lokah_The_video-Downloader"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                GitHub
-              </a>
             </div>
             <p className="text-xs sm:text-sm text-zinc-600">
               © 2026 Lokah. All rights reserved.
